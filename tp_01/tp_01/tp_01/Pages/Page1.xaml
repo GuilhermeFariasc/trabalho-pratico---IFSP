@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="tp_01.Pages.Page1">
+    <ContentPage.Content>
+        <StackLayout >
+            <Label x:Name="title"
+                   Text="Aplicação Teste"
+                   TextColor="SteelBlue"
+                   FontSize="Large"
+                   VerticalOptions="CenterAndExpand" 
+                   HorizontalOptions="CenterAndExpand" />
+
+            <Label Text="ID: "
+                   TextColor="SteelBlue"
+                   FontSize="20"
+                   VerticalOptions="CenterAndExpand" 
+                   HorizontalOptions="CenterAndExpand" />
+
+            <Entry x:Name="etId"
+                   Placeholder="Insira seu ID"
+                   PlaceholderColor="SlateGray"
+                   VerticalOptions="CenterAndExpand" />
+
+            <Label Text="PASS: "
+                   TextColor="SteelBlue"
+                   FontSize="20"
+                   VerticalOptions="CenterAndExpand" 
+                   HorizontalOptions="CenterAndExpand" />
+
+            <Entry x:Name="etPasw"
+                   PlaceholderColor="SlateGray"
+                   IsPassword="true"
+                   Placeholder="Password" />
+
+            <Button x:Name="btOk"
+                    Text="Ok"
+                    Clicked="BtOk_ClickedAsync"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand"
+                    TextColor="MediumBlue"
+                    FontSize="24"/>
+
+            <Button x:Name="btLimpar"
+                    Text="Limpar" 
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand"
+                    TextColor="MediumBlue"
+                    FontSize="24"
+                    Clicked="OnClickLimpar" />
+
+            <Button x:Name="btCredito"
+                    Text="Creditos"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand"
+                    TextColor="MediumBlue"
+                    FontSize="24"
+                    Clicked="OnClickCredito" />
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
