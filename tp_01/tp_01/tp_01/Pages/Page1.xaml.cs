@@ -35,6 +35,7 @@ namespace tp_01.Pages
         {
             this.etId.Text = "";
             this.etPasw.Text = "";
+            this.etId.Focus();
         }
 
         async void OnClickCredito(object credito, EventArgs args)
